@@ -184,7 +184,7 @@ selected_perfil = consulta_neo4j(selected_congresista)
 client = OpenAI(api_key = key_)
 ################
 def _ask_chatgpt(messages, model="gpt-4o-mini"):
-    if model == "o3-mini":
+    if model == "o3-2025-04-16": #"o3-mini":
         response = client.chat.completions.create(
             model=model,
             # model="gpt-4o",
