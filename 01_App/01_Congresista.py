@@ -242,7 +242,7 @@ if st.session_state["user_input"]:
     # Llamada a la API de ChatGPT usando el historial completo de mensajes
     if potencia:
         response = _ask_chatgpt(
-            model="o3-mini",
+            model="o3-2025-04-16",
             messages=st.session_state.chat_history
         )
     else:
